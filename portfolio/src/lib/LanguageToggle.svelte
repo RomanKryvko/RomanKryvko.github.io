@@ -2,11 +2,11 @@
 </script>
 
 <div class="language-switch">
-  <div class="switch-wrapper">
+  <div class="switch-wrapper wrapper-eng">
     <input type="radio" id="radio-eng" name="lang-switch" checked />
     <label for="radio-eng">Eng</label>
   </div>
-  <div class="switch-wrapper">
+  <div class="switch-wrapper wrapper-ukr">
     <input type="radio" id="radio-ukr" name="lang-switch" />
     <label for="radio-ukr">Ukr</label>
   </div>
@@ -15,6 +15,7 @@
 <style>
   .language-switch {
     display: flex;
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
   }
 
   .switch-wrapper {
@@ -26,19 +27,50 @@
   }
 
   .switch-wrapper label {
+    position: relative;
     color: var(--color-text);
-    padding: 1px 5px;
     cursor: pointer;
     user-select: none;
     display: block;
     font-weight: lighter;
     text-align: center;
-    transition: all 0.4s 0s ease;
+    padding: 2px 4px;
+    transition: color 0.4s ease 0s;
+    clip-path: var(--shape, none);
+    overflow: hidden;
+  }
+
+  .switch-wrapper label::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--color-primary);
+    clip-path: inherit;
+    transform: scaleX(0);
+    transform-origin: var(--origin, left);
+    transition: transform 0.3s ease;
+  }
+
+  .wrapper-ukr label {
+    --shape: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    --origin: left;
+    padding: 2px 20px 2px 4px;
+  }
+
+  .wrapper-eng label {
+    --shape: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+    --origin: right;
+    padding: 2px 4px 2px 20px;
+  }
+
+  .switch-wrapper input[type='radio']:checked + label::before {
+    transform: scaleX(1);
   }
 
   .switch-wrapper input[type='radio']:checked + label {
     background-color: var(--color-primary);
-    border-radius: 4px;
     color: var(--color-background);
+    transition: color 0.25s ease 0.15s;
   }
 </style>

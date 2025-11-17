@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
