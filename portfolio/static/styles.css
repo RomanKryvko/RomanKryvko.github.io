@@ -1,0 +1,46 @@
+:root {
+    --color-background: #1e1e1e;
+    --color-primary: #f2c94c;
+    --color-secondary: #f2994a;
+    --color-accent: #eb5757;
+    --color-text: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-text)
+}
+
+.link-hidden {
+    text-decoration: none;
+    color: var(--color-text)
+}
+
+.button-fill {
+    position: relative;
+    display: inline-block;
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.button-fill::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-primary);
+    clip-path: inherit;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.button-fill:hover::before {
+    transform: scaleX(1);
+}
+
+.button-fill:hover {
+    transition: color 0.25s ease 0.15s; /*HACK: Smoothly transition colour from primary to bg. Still looks a bit rough.*/
+    color: var(--color-background);
+}
