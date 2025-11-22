@@ -1,13 +1,32 @@
 <script lang="ts">
+  let selectedLang = $state('eng');
+  const changeLang = () => {
+    //TODO: implement
+    console.log(selectedLang);
+  };
 </script>
 
 <div class="language-switch">
   <div class="switch-wrapper wrapper-eng">
-    <input type="radio" id="radio-eng" name="lang-switch" checked />
+    <input
+      type="radio"
+      id="radio-eng"
+      name="lang-switch"
+      value="eng"
+      bind:group={selectedLang}
+      onchange={changeLang}
+    />
     <label for="radio-eng">Eng</label>
   </div>
   <div class="switch-wrapper wrapper-ukr">
-    <input type="radio" id="radio-ukr" name="lang-switch" />
+    <input
+      type="radio"
+      id="radio-ukr"
+      name="lang-switch"
+      value="ukr"
+      bind:group={selectedLang}
+      onchange={changeLang}
+    />
     <label for="radio-ukr">Ukr</label>
   </div>
 </div>

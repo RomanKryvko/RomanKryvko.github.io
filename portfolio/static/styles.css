@@ -40,7 +40,16 @@ body {
     transform: scaleX(1);
 }
 
+.button-fill:focus {
+    transition: color 0.25s ease 0.15s;
+    color: var(--color-background);
+}
+
+.button-fill:focus::before {
+    transform: scaleX(1);
+}
+
 .button-fill:hover {
-    transition: color 0.25s ease 0.15s; /*HACK: Smoothly transition colour from primary to bg. Still looks a bit rough.*/
+    transition: color 0.25s ease 0.15s;
     color: var(--color-background);
 }
