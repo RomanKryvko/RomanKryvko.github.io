@@ -18,39 +18,3 @@ body {
     text-decoration: none;
     color: var(--color-text)
 }
-
-.button-fill {
-    position: relative;
-    display: inline-block;
-    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%);
-}
-
-.button-fill::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: var(--color-primary);
-    clip-path: inherit;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.3s ease;
-    z-index: -1;
-}
-
-.button-fill:hover::before {
-    transform: scaleX(1);
-}
-
-.button-fill:focus {
-    transition: color 0.25s ease 0.15s;
-    color: var(--color-background);
-}
-
-.button-fill:focus::before {
-    transform: scaleX(1);
-}
-
-.button-fill:hover {
-    transition: color 0.25s ease 0.15s;
-    color: var(--color-background);
-}
