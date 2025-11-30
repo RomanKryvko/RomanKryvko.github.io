@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { fly } from 'svelte/transition';
+
   const props = $props();
   let showGitHubLink = $state(false);
 </script>
@@ -14,7 +16,9 @@
     <img class="github-avatar" alt="GitHub avatar." src={props?.avatar_url} />
   </button>
   {#if showGitHubLink}
-    <a class="github-link link-hidden" href={props?.html_url}>GitHub: <u>{props?.login}</u></a>
+    <a class="github-link link-hidden" transition:fly href={props?.html_url}
+      >GitHub: <u>{props?.login}</u></a
+    >
   {/if}
 </div>
 
