@@ -5,5 +5,9 @@ export const load = async ({ fetch }: any) => {
     return;
   }
   const json = await res.json();
-  return { avatar_url: json.avatar_url, html_url: json.html_url, login: json.login };
+  return {
+    avatar_url: json.avatar_url,
+    html_url: json.html_url,
+    login: json.login
+  };
 };

@@ -21,6 +21,10 @@ html {
     scroll-behavior: smooth;
 }
 
+ul {
+    padding-left: 1em;
+}
+
 .link-hidden {
     text-decoration: none;
     color: var(--color-text);
@@ -29,8 +33,9 @@ html {
 .section {
     padding-top: 2.5em;
     max-width: 1080px;
-    height: 100vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
