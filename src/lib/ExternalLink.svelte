@@ -2,7 +2,7 @@
   const { url, children } = $props();
 </script>
 
-<a class="external-link" href={url}><u>{@render children()}</u></a>
+<a class="external-link" rel="external" href={url}><u>{@render children()}</u></a>
 
 <style>
   .external-link {
