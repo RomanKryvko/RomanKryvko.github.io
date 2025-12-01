@@ -1,5 +1,6 @@
 <script lang="ts">
   import { fly } from 'svelte/transition';
+  import ExternalLink from './ExternalLink.svelte';
 
   const props = $props();
   let showGitHubLink = $state(false);
@@ -16,9 +17,7 @@
     <img class="github-avatar" alt="GitHub avatar." src={props?.avatar_url} />
   </button>
   {#if showGitHubLink}
-    <a class="github-link link-hidden" transition:fly href={props?.html_url}
-      >GitHub: <u>{props?.login}</u></a
-    >
+    <p transition:fly>GitHub: <ExternalLink url={props?.html_url}>{props?.login}</ExternalLink></p>
   {/if}
 </div>
 
@@ -45,10 +44,5 @@
     background: var(--color-primary);
     text-align: center;
     visibility: visible;
-  }
-  .github-link:after {
-    font-family: system-ui;
-    font-size: larger;
-    content: '↗';
   }
 </style>
