@@ -17,6 +17,7 @@
   .header {
     background-color: var(--color-background);
     position: sticky;
+    top: 0px;
     box-shadow: 0px 4px 50px 0px #000000;
     display: flex;
     flex-direction: row;
