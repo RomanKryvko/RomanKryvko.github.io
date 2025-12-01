@@ -27,6 +27,7 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
     font-size: 20px;
+    z-index: 1;
   }
 
   .header nav a {

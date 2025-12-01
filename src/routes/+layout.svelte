@@ -12,4 +12,17 @@
 </svelte:head>
 
 <Navigation />
-{@render children()}
+<main class="main">
+  {@render children()}
+</main>
+
+<style>
+  .main {
+    margin-top: 2em;
+    margin-left: 10em;
+    margin-right: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+</style>
