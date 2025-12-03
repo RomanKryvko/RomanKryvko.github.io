@@ -14,6 +14,10 @@
   const LINKEDIN = 'www.linkedin.com/in/roman-kryvko-946361319';
 </script>
 
+<svelte:head>
+  <title>Roman's portfolio</title>
+</svelte:head>
+
 <div class="hero-section section">
   <h1 class="greeting">
     {@html $strings.heroSection}
