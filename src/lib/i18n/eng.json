@@ -1,0 +1,16 @@
+{
+  "aboutNav": "About",
+  "projectsNav": "Projects",
+  "contactNav": "Contact",
+  "heroSection": "Hi! I am <i><u>Roman Kryvko</u></i>, a Software Engineering student @KhNURE &#38; an aspiring backend developer.",
+  "aboutHeader": "About me",
+  "aboutIntro": "Backend-focused full-stack developer",
+  "aboutEducation": "Pursuing a bachelor’s degree at Kharkiv National University of Radioelectronics.",
+  "aboutLookingFor": "Looking for full-stack/backend positions, internships, or collaborations",
+  "aboutLinux": "A Linux user ",
+  "aboutResume": "Download my resume:",
+  "skillsHeader": "What I've worked with",
+  "projectsHeader": "What I've done",
+  "contactHeader": "Contact",
+  "thanksForVisiting": "Thanks for visiting my website! ;-)"
+}

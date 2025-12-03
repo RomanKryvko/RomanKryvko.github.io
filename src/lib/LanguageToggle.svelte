@@ -1,8 +1,9 @@
 <script lang="ts">
+  import { lang } from './i18n/strings';
+
   let selectedLang = $state('eng');
   const changeLang = () => {
-    //TODO: implement
-    console.log(selectedLang);
+    lang.set(selectedLang);
   };
 </script>
 

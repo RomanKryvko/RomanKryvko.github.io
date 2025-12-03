@@ -5,6 +5,7 @@
   import ProjectCard from '$lib/ProjectCard.svelte';
   import SectionHeader from '$lib/SectionHeader.svelte';
   import SkillCard from '$lib/SkillCard.svelte';
+  import { strings } from '$lib/i18n/strings.js';
 
   let { data } = $props();
   const subs = [{ icon: '/img/django-logo.svg', name: 'Django' }];
@@ -15,31 +16,30 @@
 
 <div class="hero-section section">
   <h1 class="greeting">
-    Hi! I am <i><u>Roman Kryvko</u></i>, a Software Engineering student @KhNURE &#38; an aspiring
-    backend developer.
+    {@html $strings.heroSection}
   </h1>
   <GitHubPreview avatar_url={data.avatar_url} html_url={data.html_url} login={data.login} />
 </div>
 <div class="section">
-  <SectionHeader id="about">About me</SectionHeader>
+  <SectionHeader id="about">{$strings.aboutHeader}</SectionHeader>
   <InfoCard>
     <ul>
-      <li>Backend-focused full-stack developer</li>
-      <li>Pursuing a bachelor’s degree at Kharkiv National University of Radioelectronics.</li>
-      <li>Looking for full-stack/backend positions, internships, or collaborations</li>
+      <li>{$strings.aboutIntro}</li>
+      <li>{$strings.aboutEducation}</li>
+      <li>{$strings.aboutLookingFor}</li>
       <li>
-        A Linux user <ExternalLink url="https://github.com/RomanKryvko/dotfiles"
+        {$strings.aboutLinux}<ExternalLink url="https://github.com/RomanKryvko/dotfiles"
           >(dotfiles)</ExternalLink
         >
       </li>
-      <li>Download my resume:</li>
+      <li>{$strings.aboutResume}</li>
     </ul>
   </InfoCard>
-  <SectionHeader id="skills">What I've worked with</SectionHeader>
+  <SectionHeader id="skills">{$strings.skillsHeader}</SectionHeader>
   <SkillCard icon="/img/python-logo.svg" name="python" subskills={subs} />
 </div>
 <div class="section">
-  <SectionHeader id="projects">What I've done</SectionHeader>
+  <SectionHeader id="projects">{$strings.projectsHeader}</SectionHeader>
   <div class="projects-section">
     <ProjectCard
       url="https://github.com/RomanKryvko/stush"
@@ -72,12 +72,12 @@
   </div>
 </div>
 <div class="section">
-  <SectionHeader id="contact">Contact</SectionHeader>
+  <SectionHeader id="contact">{$strings.contactHeader}</SectionHeader>
   <InfoCard>
     <p>Email: <ExternalLink url="mailto:{EMAIL}">{EMAIL}</ExternalLink></p>
     <p>Linkedin: <ExternalLink url={LINKEDIN}>{LINKEDIN}</ExternalLink></p>
   </InfoCard>
-  <h3>Thanks for visiting my website! ;-)</h3>
+  <h3>{$strings.thanksForVisiting}</h3>
 </div>
 
 <style>

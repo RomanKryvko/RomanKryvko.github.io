@@ -1,14 +1,15 @@
 <script lang="ts">
   import LanguageToggle from './LanguageToggle.svelte';
   import Logo from './Logo.svelte';
+  import { strings } from './i18n/strings';
 </script>
 
 <header class="header">
   <Logo />
   <nav>
-    <a href="/#about" class="link-hidden button-fill">About</a>
-    <a href="/#projects" class="link-hidden button-fill">Projects</a>
-    <a href="/#contact" class="link-hidden button-fill">Contact</a>
+    <a href="/#about" class="link-hidden button-fill">{$strings['aboutNav']}</a>
+    <a href="/#projects" class="link-hidden button-fill">{$strings['projectsNav']}</a>
+    <a href="/#contact" class="link-hidden button-fill">{$strings['contactNav']}</a>
   </nav>
   <LanguageToggle />
 </header>
