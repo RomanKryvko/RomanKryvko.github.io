@@ -59,9 +59,9 @@
           <li>line-editing library;</li>
           <li>glob expansions;</li>
           <li>basic builtins;</li>
-          <li>command lists and pipelines</li>
+          <li>command lists and pipelines.</li>
         </ul>
-        <li>C++20, CMake</li>
+        <li>C++20, CMake.</li>
       </ul>
     </ProjectCard>
     <ProjectCard
@@ -70,10 +70,10 @@
       shortDesc="A browser extension for translating images."
     >
       <ul>
-        <li>Uses OCR to detect text in image or screen area.</li>
-        <li>Uses translation APIs to translate text.</li>
-        <li>Displays results in a popup.</li>
-        <li>TypeScript, tesseract.js (OCR), Vite, Svelte</li>
+        <li>Uses OCR to detect text in image or screen area;</li>
+        <li>uses translation APIs to translate text;</li>
+        <li>displays results in a popup;</li>
+        <li>TypeScript, tesseract.js (OCR), Vite, Svelte.</li>
       </ul>
     </ProjectCard>
   </div>
