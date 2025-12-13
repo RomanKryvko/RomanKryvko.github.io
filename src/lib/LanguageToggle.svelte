@@ -43,14 +43,18 @@
   }
 
   .switch-wrapper input[type='radio'] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    pointer-events: none;
   }
 
   .switch-wrapper label {
     position: relative;
     color: var(--color-text);
     cursor: pointer;
-    user-select: none;
     display: block;
     font-weight: lighter;
     text-align: center;
