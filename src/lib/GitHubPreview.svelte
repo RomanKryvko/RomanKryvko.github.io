@@ -38,8 +38,7 @@
   }
   .github-avatar {
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 40%;
     border-radius: 50%;
     background: var(--color-primary);
     text-align: center;
