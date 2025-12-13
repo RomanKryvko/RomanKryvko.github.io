@@ -1,41 +1,41 @@
 :root {
-    --color-background: #1e1e1e;
-    --color-primary: #f2c94c;
-    --color-secondary: #f2994a;
-    --color-accent: #eb5757;
-    --color-text: #ffffff;
-    --color-tint: #ffffff08;
-    --ff: 'Ubuntu', sans-serif;
+  --color-background: #1e1e1e;
+  --color-primary: #f2c94c;
+  --color-secondary: #f2994a;
+  --color-accent: #eb5757;
+  --color-text: #ffffff;
+  --color-tint: #ffffff08;
+  --ff: 'Ubuntu', sans-serif;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--color-background);
-    color: var(--color-text);
-    font-family: var(--ff);
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--ff);
 }
 
 html {
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 ul {
-    padding-left: 1em;
+  padding-left: 1em;
 }
 
 .link-hidden {
-    text-decoration: none;
-    color: var(--color-text);
+  text-decoration: none;
+  color: var(--color-text);
 }
 
 .section {
-    padding-top: 2.5em;
-    max-width: 1080px;
-    min-height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  padding-top: 2.5em;
+  max-width: 1080px;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
