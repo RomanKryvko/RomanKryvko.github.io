@@ -104,6 +104,9 @@
     flex: 1;
     min-width: 200px;
   }
+  .greeting {
+    font-size: var(--h1);
+  }
   .projects-section {
     display: flex;
     justify-content: center;

@@ -27,6 +27,11 @@ ul {
   padding-left: 1em;
 }
 
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
 .link-hidden {
   text-decoration: none;
   color: var(--color-text);

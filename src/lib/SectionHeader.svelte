@@ -15,6 +15,8 @@
     padding-right: 2em;
     color: var(--color-background);
     max-width: fit-content;
+    font-size: var(--h1);
+    text-align: center;
   }
 
   .section-header:hover {

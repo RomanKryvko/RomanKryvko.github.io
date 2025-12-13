@@ -70,9 +70,8 @@
   }
 
   .skill-icon {
-    width: clamp(28px, 6vw, 60px);
-    height: clamp(28px, 6vw, 60px);
-
+    width: clamp(40px, 6vw, 60px);
+    height: clamp(40px, 6vw, 60px);
     transition: transform 0.35s ease;
   }
 
@@ -110,7 +109,7 @@
   }
 
   .subskill-icon {
-    width: clamp(32px, 5vw, 50px);
+    width: clamp(40px, 5vw, 60px);
     height: auto;
     margin-bottom: 0.25rem;
   }
