@@ -6,6 +6,8 @@
   --color-text: #ffffff;
   --color-tint: #ffffff08;
   --ff: 'Ubuntu', sans-serif;
+  --h1: clamp(1.2rem, 5vw, 2rem);
+  --h2: clamp(0.8rem, 5vw, 1.3rem);
 }
 
 body {

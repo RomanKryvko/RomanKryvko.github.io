@@ -27,7 +27,7 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: var(--h2);
   }
   .github-btn {
     border-radius: 50%;

@@ -27,7 +27,7 @@
     padding: 10px 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: var(--h2);
     z-index: 1;
   }
 

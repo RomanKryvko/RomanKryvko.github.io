@@ -25,7 +25,7 @@
     justify-content: center;
   }
   .proj-name {
-    font-size: 30px;
+    font-size: var(--h1);
     font-weight: bold;
   }
 </style>
