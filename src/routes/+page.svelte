@@ -11,7 +11,10 @@
   const subs = [{ icon: '/img/django-logo.svg', name: 'Django' }];
 
   const EMAIL = 'roman.kr43@gmail.com';
-  const LINKEDIN = 'www.linkedin.com/in/roman-kryvko-946361319';
+  const LINKEDIN = 'https://www.linkedin.com/in/roman-kryvko-946361319';
+  const stripProtocol = (link: string): string => {
+    return link.match(/http.:\/\/(.*)/)?.at(1) ?? link;
+  };
 </script>
 
 <svelte:head>
@@ -79,7 +82,9 @@
   <SectionHeader id="contact">{$strings.contactHeader}</SectionHeader>
   <InfoCard>
     <p>Email: <ExternalLink url="mailto:{EMAIL}">{EMAIL}</ExternalLink></p>
-    <p>Linkedin: <ExternalLink url={LINKEDIN}>{LINKEDIN}</ExternalLink></p>
+    <p>
+      Linkedin: <ExternalLink url={LINKEDIN}>{stripProtocol(LINKEDIN)}</ExternalLink>
+    </p>
   </InfoCard>
   <h3>{$strings.thanksForVisiting}</h3>
 </div>
