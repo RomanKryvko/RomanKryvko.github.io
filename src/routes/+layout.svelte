@@ -19,8 +19,8 @@
 <style>
   .main {
     margin-top: 2em;
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: clamp(3em, 15vw, 10em);
+    margin-right: clamp(3em, 15vw, 10em);
     display: flex;
     flex-direction: column;
     align-items: center;

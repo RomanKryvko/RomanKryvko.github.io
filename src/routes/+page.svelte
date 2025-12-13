@@ -96,7 +96,7 @@
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
   }
