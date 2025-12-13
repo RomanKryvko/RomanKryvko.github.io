@@ -1,5 +1,6 @@
 <script lang="ts">
   import { slide } from 'svelte/transition';
+  import { linear } from 'svelte/easing';
 
   const props = $props();
   let expanded = $state(false);
@@ -21,7 +22,13 @@
     />
   </button>
   {#if expanded}
-    <div class="subskill-container" transition:slide={{ axis: 'x', easing: (t) => t * 2 }}>
+    <div
+      class="subskill-container"
+      transition:slide={{
+        axis: 'x',
+        easing: linear
+      }}
+    >
       {#each props.subskills as sub}
         <div class="subskill">
           <img class="subskill-icon" src={sub.icon} alt={sub.name} height="50px" />
@@ -35,6 +42,7 @@
 <style>
   .skill-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 0.75rem;
     padding: 0.25rem 0;

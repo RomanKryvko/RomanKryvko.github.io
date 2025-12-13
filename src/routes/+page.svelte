@@ -43,7 +43,9 @@
     </ul>
   </InfoCard>
   <SectionHeader id="skills">{$strings.skillsHeader}</SectionHeader>
-  <SkillCard icon="/img/python-logo.svg" name="python" subskills={subs} />
+  <div class="skill-section">
+    <SkillCard icon="/img/python-logo.svg" name="python" subskills={subs} />
+  </div>
 </div>
 <div class="section">
   <SectionHeader id="projects">{$strings.projectsHeader}</SectionHeader>
@@ -107,5 +109,8 @@
     justify-content: center;
     gap: 1em;
     flex-wrap: wrap;
+  }
+  .skill-section {
+    width: 100%;
   }
 </style>

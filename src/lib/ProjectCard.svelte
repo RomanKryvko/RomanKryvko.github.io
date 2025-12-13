@@ -19,6 +19,7 @@
   .project-card {
     min-height: 250px;
     width: 400px;
+    margin: 5px;
   }
   .proj-name-wraper {
     display: flex;
