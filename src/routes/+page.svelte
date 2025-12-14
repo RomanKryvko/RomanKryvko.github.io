@@ -6,9 +6,9 @@
   import SectionHeader from '$lib/SectionHeader.svelte';
   import SkillCard from '$lib/SkillCard.svelte';
   import { strings } from '$lib/i18n/strings.js';
+  import skills from '$lib/assets/skills.json';
 
   let { data } = $props();
-  const subs = [{ icon: '/img/django-logo.svg', name: 'Django' }];
 
   const EMAIL = 'roman.kr43@gmail.com';
   const LINKEDIN = 'https://www.linkedin.com/in/roman-kryvko-946361319';
@@ -44,7 +44,9 @@
   </InfoCard>
   <SectionHeader id="skills">{$strings.skillsHeader}</SectionHeader>
   <div class="skill-section">
-    <SkillCard icon="/img/python-logo.svg" name="python" subskills={subs} />
+    {#each skills as s}
+      <SkillCard icon={s.icon} name={s.name} subskills={s.subskills} />
+    {/each}
   </div>
 </div>
 <div class="section">

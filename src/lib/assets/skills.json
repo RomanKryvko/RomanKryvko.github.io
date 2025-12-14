@@ -1,0 +1,108 @@
+[
+  {
+    "icon": "/img/python-logo.svg",
+    "name": "Python",
+    "subskills": [
+      {
+        "icon": "/img/django-logo.svg",
+        "name": "Django"
+      }
+    ]
+  },
+  {
+    "icon": "/img/cpp-logo.svg",
+    "name": "C++",
+    "subskills": [
+      {
+        "icon": "/img/cmake-logo.svg",
+        "name": "CMake"
+      },
+      {
+        "icon": "/img/qt-logo.svg",
+        "name": "Qt"
+      }
+    ]
+  },
+  {
+    "icon": "/img/java-logo.svg",
+    "name": "Java",
+    "subskills": [
+      {
+        "icon": "/img/maven-logo.svg",
+        "name": "Maven"
+      },
+      {
+        "icon": "/img/spring-logo.svg",
+        "name": "Spring Boot"
+      },
+      {
+        "icon": "/img/android-logo.svg",
+        "name": "Android"
+      }
+    ]
+  },
+  {
+    "icon": "/img/javascript-logo.svg",
+    "name": "JavaScript",
+    "subskills": [
+      {
+        "icon": "/img/express-logo.svg",
+        "name": "Express"
+      },
+      {
+        "icon": "/img/react-logo.svg",
+        "name": "React"
+      },
+      {
+        "icon": "/img/svelte-logo.svg",
+        "name": "Svelte"
+      }
+    ]
+  },
+  {
+    "icon": "/img/php-logo.svg",
+    "name": "PHP",
+    "subskills": []
+  },
+  {
+    "icon": "/img/css-logo.svg",
+    "name": "CSS",
+    "subskills": []
+  },
+  {
+    "icon": "/img/sql-logo.svg",
+    "name": "SQL",
+    "subskills": [
+      {
+        "icon": "/img/postgresql-logo.svg",
+        "name": "PostgreSQL"
+      },
+      {
+        "icon": "/img/mysql-logo.svg",
+        "name": "MySQL"
+      }
+    ]
+  },
+  {
+    "icon": "/img/tools-icon.svg",
+    "name": "Tools",
+    "subskills": [
+      {
+        "icon": "/img/git-logo.svg",
+        "name": "Git"
+      },
+      {
+        "icon": "/img/docker-logo.svg",
+        "name": "Docker"
+      },
+      {
+        "icon": "/img/apache-logo.svg",
+        "name": "Apache HTTP Server"
+      },
+      {
+        "icon": "/img/nginx-logo.svg",
+        "name": "Nginx"
+      }
+    ]
+  }
+]

@@ -32,7 +32,6 @@
       {#each props.subskills as sub}
         <div class="subskill">
           <img class="subskill-icon" src={sub.icon} alt={sub.name} height="50px" />
-          <span>{sub.name}</span>
         </div>
       {/each}
     </div>
@@ -90,9 +89,12 @@
   }
 
   .subskill {
+    width: clamp(40px, 5vw, 60px);
+    height: clamp(40px, 5vw, 60px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0.5rem 0.75rem;
     border: 1px solid var(--color-primary);
     border-radius: 8px;
@@ -109,14 +111,9 @@
   }
 
   .subskill-icon {
-    width: clamp(40px, 5vw, 60px);
+    width: clamp(30px, 5vw, 50px);
+    height: clamp(30px, 5vw, 50px);
     height: auto;
     margin-bottom: 0.25rem;
-  }
-
-  .subskill span {
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--color-text);
-    text-align: center;
   }
 </style>
