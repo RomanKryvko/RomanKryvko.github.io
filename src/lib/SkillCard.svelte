@@ -31,7 +31,7 @@
     >
       {#each props.subskills as sub}
         <div class="subskill">
-          <img class="subskill-icon" src={sub.icon} alt={sub.name} height="50px" />
+          <img class="subskill-icon" src={sub.icon} alt={sub.name} title={sub.name} height="50px" />
         </div>
       {/each}
     </div>
