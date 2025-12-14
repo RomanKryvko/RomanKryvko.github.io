@@ -81,6 +81,7 @@
   .subskill-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 1rem;
     align-items: center;
     margin-left: 0.75rem;
