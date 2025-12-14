@@ -7,11 +7,10 @@
   import SkillCard from '$lib/SkillCard.svelte';
   import { strings } from '$lib/i18n/strings.js';
   import skills from '$lib/assets/skills.json';
+  import personal from '$lib/assets/personal.json';
 
   let { data } = $props();
 
-  const EMAIL = 'roman.kr43@gmail.com';
-  const LINKEDIN = 'https://www.linkedin.com/in/roman-kryvko-946361319';
   const stripProtocol = (link: string): string => {
     return link.match(/http.:\/\/(.*)/)?.at(1) ?? link;
   };
@@ -39,7 +38,7 @@
           >(dotfiles)</ExternalLink
         >
       </li>
-      <li>{$strings.aboutResume}</li>
+      <li><ExternalLink url={personal.resume}>{$strings.aboutResume}</ExternalLink></li>
     </ul>
   </InfoCard>
   <SectionHeader id="skills">{$strings.skillsHeader}</SectionHeader>
@@ -85,9 +84,11 @@
 <div class="section">
   <SectionHeader id="contact">{$strings.contactHeader}</SectionHeader>
   <InfoCard>
-    <p>Email: <ExternalLink url="mailto:{EMAIL}">{EMAIL}</ExternalLink></p>
+    <p>Email: <ExternalLink url="mailto:{personal.email}">{personal.email}</ExternalLink></p>
     <p>
-      Linkedin: <ExternalLink url={LINKEDIN}>{stripProtocol(LINKEDIN)}</ExternalLink>
+      Linkedin: <ExternalLink url={personal.linkedin}
+        >{stripProtocol(personal.linkedin)}</ExternalLink
+      >
     </p>
   </InfoCard>
   <h3>{$strings.thanksForVisiting}</h3>
